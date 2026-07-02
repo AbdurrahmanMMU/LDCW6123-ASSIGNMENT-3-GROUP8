@@ -1,3 +1,26 @@
+/*
+TikTok Engagement Rate Calculator
+  --------------------------------
+  Part 2 of LDCW6123 Group Project for Group 8
+  Connects to Part 1 topic: TikTok Social Commerce (Christensen's Disruptive
+  Innovation Model). This program simulates a tool a creator/brand on TikTok
+  would use to measure how well their content is performing (directly tied
+  to the "Creator Economy" and "Influencer Marketing Industry" stages shown
+  on the Part 1 poster)
+
+  INPUTS
+    - views    : total number of video view
+    - likes    : total number of like
+    - comments : total number of comment
+    - shares   : total number of share
+    - answer   : confirmation to restart the program
+
+  OUTPUTS
+    - Engagement Rate (%) = ((likes + comments + shares) / views) * 100
+    - Engagement category label: Viral / High / Average / Low
+    - Friendly error message and restart if views = 0 or any values are negative (cannot divide by zero)
+	- Restarting the program if confirmed n is entered
+*/
 #include <stdio.h>
 int main()
 {
