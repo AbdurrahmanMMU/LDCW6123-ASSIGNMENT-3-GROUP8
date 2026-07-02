@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main()
 {
-int view,like,comment,share,bad=0;
+int view,like,comment,share,stop;
 float engage;
 printf("----------------------Tiktok Engagement Rate Calculator-------------------\n");
 printf("The purpose of this calculator is to calculate the total amount of\n");
@@ -17,12 +17,13 @@ scanf("%d", &share);
 printf("Please enter the total number of views: ");
 scanf("%d", &view);
 if (view<0||like<0||comment<0||share<0){
-printf("You have entered an invalid value, please input again");
+printf("You have entered an invalid value, please input again\n");
 }
 else {
-bad=1;}
+stop=1;
 }
-while (bad=0);
+}
+while (stop!=1);
 return 0;
 }
 
